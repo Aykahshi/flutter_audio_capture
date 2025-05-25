@@ -31,11 +31,6 @@ public class FlutterAudioCapturePlugin: FlutterPlugin, MethodCallHandler {
   // them functionally equivalent. Only one of onAttachedToEngine or registerWith will be called
   // depending on the user's project. onAttachedToEngine or registerWith must both be defined
   // in the same class.
-  companion object {
-    @JvmStatic
-    fun registerWith(registrar: Registrar) {
-    }
-  }
 
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
     when (call.method) {
